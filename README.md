@@ -1,80 +1,52 @@
 # Govind Sharma
 
-I'm a **Senior Software Engineer** focused on building **production-grade AI SaaS products** and **real-time systems** end-to-end — from architecture → shipping → scaling → ops.
+**Staff Software Engineer** building AI agents and the distributed systems behind them.
 
-- Mumbai, India
-- Website: https://govindio.com
-- LinkedIn: https://linkedin.com/in/govind-io
-- GitHub: https://github.com/govind-io
-- Email: govindgovind852@gmail.com
+I start from the business problem, pick the simplest design that holds up under retries and concurrency, and write the trade-offs down.
 
----
+Mumbai, India · [govindio.com](https://www.govindio.com) · [LinkedIn](https://www.linkedin.com/in/govind-io/) · [Email](mailto:govindgovind852@gmail.com)
 
-## What I do
+## Selected work
 
-### AI-powered SaaS (0→1 → scale)
-- Built and scaled AI-driven CRM / Sales / Marketing systems used by **1000+ customers across 50+ countries**
-- Designed **RAG + agentic workflows** over **1M+ documents** (pgvector + Elasticsearch), with structured outputs and integrations
-- Delivered measurable business impact (e.g., **$250K ARR → $2M+ ARR in ~9 months** at Stamina.io)
+### [Stamina.io](https://stamina.io): AI sales, CRM and marketing SaaS
 
-### Real-time & high-scale systems
-- Built real-time products using **WebRTC / WebSocket / SSE**
-- Worked on systems handling **10K req/sec** and **100K concurrent users**
-- Deep experience with performance optimization, reliability, and deployment automation
+Joined as Founding Backend Engineer and was promoted to Staff Engineer and Head of Engineering. ARR grew from $250K to $2M+ in 9 months, with 1,000+ customers in 50+ countries.
 
-### Platform & DevOps ownership
-- Kubernetes (self-managed), Docker, AWS, CI/CD, preview environments per PR
-- Observability + tooling: Datadog, SonarQube, GitHub Actions, Nginx
+- **Zara, an AI SDR agent:** built on LangGraph, it enriches 20K leads a day and doubled reply rates.
+- **Workflow engine:** starts exactly one run per event on at-least-once delivery, across 5,000+ workflows a day.
+- **Credit ledger:** idempotent usage billing with Stripe sync that survives late and duplicate webhooks.
+- **LLM cost:** per-task model routing, held to quality by evals and guardrails, cut cost per lead by 70%.
 
----
+### [FastBowlingLab](https://fastbowlinglab.com): founder and solo builder
 
-## Highlights
+An AI coaching app for fast bowlers. It runs MediaPipe pose estimation on phone video and turns it into annotated video and adaptive training plans. 1,200+ real users and 2,500+ deliveries analysed.
 
-- **Founding Backend Engineer (Lead) @ Stamina.io** — built:
-  - **Zara** (AI SDR agent): lead enrichment + pitch generation + orchestration
-  - **Cold calling system** (Twilio + webhooks): **200+ customers**, **5000+ calls/day**
-  - Cold email engine, CRM features, AI workflow automation
-  - Per-PR preview environments + full infra ownership
+### NeshAI: engineering lead, via Better Software
 
-- **Engineering Lead @ Better Software (NeshAI)** — shipped AI enterprise tools for Fortune 500 customers:
-  - RAG pipelines + enrichment + structured recommendation reports
-  - Integrations: Salesforce, Google Drive, S3, Azure Blob
-  - OpenAI Assistants API + MCP servers + agentic workflows
+Built an AI product recommendation engine for Fortune 500 sales teams, with LLM-powered retrieval over 1M+ documents, p95 retrieval under 800ms, MCP servers and SOC 2 controls.
 
-- **Tech Lead @ Loktantra Mediatech**
-  - Built MeetUp by Khulke supporting **100K concurrent users**
-  - Replaced a $2K/mo vendor with self-hosted stack; improved reliability and performance
+### Loktantra Mediatech: tech lead
 
-- **Open Source**
-  - Contributor to **livekit-components-react** (official package) — ~**600K weekly downloads**
-  - Built **TMB** (Template Module Builder) on NPM
+Built a self-hosted WebRTC platform on LiveKit, with a signaling server and React SDK, replacing a $2,000/month vendor. Scaled the platform to 100,000 concurrent users.
 
----
+## Writing
 
-## Tech I work with
+- [How We Guarantee Exactly One Workflow Run per Event](https://www.govindio.com/blogs/exactly-one-workflow-run-per-event)
+- [Why Our Credit Ledger Can't Double-Spend](https://www.govindio.com/blogs/credit-ledger-that-cannot-double-spend)
+- [What It Takes to Keep Every Mailbox Inside Its Send Limits](https://www.govindio.com/blogs/per-mailbox-send-limits-at-scale)
+- [Why One Analysis Ran Five Times: Idempotency at the Write](https://www.govindio.com/blogs/five-paid-runs-for-one-analysis)
+- [How to Measure a Fast Bowler From Phone Video Without Lying](https://www.govindio.com/blogs/measuring-fast-bowlers-from-phone-video)
 
-**Languages:** TypeScript, JavaScript, Python, Go  
-**Frontend:** React, Next.js, Redux, Tailwind, shadcn/ui, Radix UI, Storybook  
-**Backend:** Node.js, NestJS, Express, GraphQL, REST, WebSocket, WebRTC  
-**AI:** RAG, LangChain, LlamaIndex, OpenAI Assistants API, Azure OpenAI, MCP servers  
-**Data:** PostgreSQL, pgvector, Elasticsearch, MongoDB, Redis, BullMQ  
-**Infra:** Docker, Kubernetes, AWS, CI/CD, Nginx, Datadog, SonarQube
+[All posts](https://www.govindio.com/blogs)
 
----
+## Open source
 
-## Current focus
+- [livekit/components-js](https://github.com/livekit/components-js/pull/740): merged contribution to LiveKit's official React components.
+- [tmb](https://github.com/govind-io/tmb): a CLI that generates modules from YAML-defined templates.
 
-Building **NexGymAI** — an AI-powered gym management platform for trainers & gym owners:
-- Generates workout + diet plans
-- Tracks client progress
-- Automates branded comms
-- Designed to autoscale with AI workflows
+## Stack
 
----
-
-## Let’s connect
-
-If you're building AI products, real-time systems, or scaling SaaS from early-stage to growth — happy to chat.
-
-- LinkedIn: https://linkedin.com/in/govind-io  
-- Email: govindgovind852@gmail.com
+- **AI:** LangGraph, LangChain, tool calling, structured outputs, MCP servers, LLM evals, guardrails, vector search, OpenAI, Anthropic Claude API
+- **Backend and data:** TypeScript, Node.js, NestJS, Python, PostgreSQL, pgvector, Elasticsearch, Redis, Kafka, Google Pub/Sub, WebRTC
+- **Cloud and reliability:** AWS, Kubernetes, Terraform, Docker, GitHub Actions, OpenTelemetry, Prometheus, Grafana
+- **Frontend:** React, Next.js, React Native (Expo)
